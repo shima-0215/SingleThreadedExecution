@@ -30,16 +30,23 @@
 
 - (void) pass:(NSString*)name address:(NSString*)address {
 
-    _counter++;
-    _name = name;
-    _address = address;
-    
-    [self check];
+    @synchronized(self) {
+        _counter++;
+        _name = name;
+        _address = address;
+        
+        [self check];
+    }
 }
 
 - (NSString*) toString {
     
-    return [NSString stringWithFormat:@"No. %@ %@, %@", @(_counter), _name, _address];
+    NSString *ret;
+    
+    @synchronized(self) {
+        ret = [NSString stringWithFormat:@"No. %@ %@, %@", @(_counter), _name, _address];
+    }
+    return ret;
 }
 
 - (void) check {
