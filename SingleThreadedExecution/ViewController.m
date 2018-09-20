@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Gate.h"
+#import "UserThread.h"
 
 @interface ViewController ()
 
@@ -23,6 +25,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    Gate *gate = [[Gate alloc] init];
+    
+    [[[UserThread alloc] initWithGate:gate name:@"Alice" address:@"Alaska"] start];
+    [[[UserThread alloc] initWithGate:gate name:@"Bobby" address:@"Brazil"] start];
+    [[[UserThread alloc] initWithGate:gate name:@"Chris" address:@"Canada"] start];
 }
 
 

@@ -13,6 +13,8 @@
 		BDD5CCDB2153FB8600041F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD5CCDA2153FB8600041F0C /* Assets.xcassets */; };
 		BDD5CCDE2153FB8600041F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD5CCDC2153FB8600041F0C /* LaunchScreen.storyboard */; };
 		BDD5CCE12153FB8600041F0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD5CCE02153FB8600041F0C /* main.m */; };
+		BDD5CCEB2153FBD700041F0C /* Gate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD5CCE92153FBD700041F0C /* Gate.m */; };
+		BDD5CCEC2153FBD700041F0C /* UserThread.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD5CCEA2153FBD700041F0C /* UserThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		BDD5CCDD2153FB8600041F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD5CCDF2153FB8600041F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD5CCE02153FB8600041F0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDD5CCE72153FBD700041F0C /* UserThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserThread.h; sourceTree = "<group>"; };
+		BDD5CCE82153FBD700041F0C /* Gate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gate.h; sourceTree = "<group>"; };
+		BDD5CCE92153FBD700041F0C /* Gate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gate.m; sourceTree = "<group>"; };
+		BDD5CCEA2153FBD700041F0C /* UserThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 		BDD5CCD02153FB8500041F0C /* SingleThreadedExecution */ = {
 			isa = PBXGroup;
 			children = (
+				BDD5CCE82153FBD700041F0C /* Gate.h */,
+				BDD5CCE92153FBD700041F0C /* Gate.m */,
+				BDD5CCE72153FBD700041F0C /* UserThread.h */,
+				BDD5CCEA2153FBD700041F0C /* UserThread.m */,
 				BDD5CCD12153FB8500041F0C /* AppDelegate.h */,
 				BDD5CCD22153FB8500041F0C /* AppDelegate.m */,
 				BDD5CCD42153FB8500041F0C /* ViewController.h */,
@@ -142,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD5CCD62153FB8500041F0C /* ViewController.m in Sources */,
+				BDD5CCEC2153FBD700041F0C /* UserThread.m in Sources */,
 				BDD5CCE12153FB8600041F0C /* main.m in Sources */,
+				BDD5CCEB2153FBD700041F0C /* Gate.m in Sources */,
 				BDD5CCD32153FB8500041F0C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
